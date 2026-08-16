@@ -1,4 +1,4 @@
-__all__ = ('AppConfig')
+__all__ = ('AppConfig', 'Settings')
 import redis
 from pydantic_settings import BaseSettings, SettingsConfigDict
 

@@ -1,7 +1,7 @@
 FROM python:3.13-slim
 
 LABEL maintainer="Max"
-LABEL description="ToDo приложение"
+LABEL description="Servise short link"
 
 WORKDIR /app
 

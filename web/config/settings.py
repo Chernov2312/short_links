@@ -4,15 +4,6 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class AppConfig(BaseSettings):
-    POSTGRES_HOST: str
-    POSTGRES_DB: str
-    POSTGRES_USER: str
-    POSTGRES_PASSWORD: str
-    POSTGRES_PORT: int = 5432
-
-    SECRET_KEY: str
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
-    ALGORITHM: str
 
     REDIS_PASSWORD: str
     REDIS_USER: str
@@ -24,15 +15,6 @@ class AppConfig(BaseSettings):
         extra='ignore',
         case_sensitive=True,
     )
-
-    def get_db_url(self):
-        return (
-            f'postgresql+asyncpg://{self.POSTGRES_USER}'
-            f':{self.POSTGRES_PASSWORD}'
-            f'@{self.POSTGRES_HOST}'
-            f':{self.POSTGRES_PORT}'
-            f'/{self.POSTGRES_DB}'
-        )
 
     @property
     def get_redis(self):

@@ -21,43 +21,7 @@ git clone https://github.com/Chernov2312/short_links
 cd short_links
 ```
 
-3. Создание виртуального окружения
-
-Linux/macOS
-
-```bash
-python3 -m venv venv
-```
-
-Windows (PowerShell)
-
-```powershell
-python -m venv venv
-```
-
-4. Активация виртуального окружения
-
-Linux/macOS
-
-```bash
-source venv/bin/activate
-```
-
-Windows (PowerShell)
-
-```powershell
-.\venv\Scripts\Activate.ps1
-```
-
-5. Установка зависимостей
-
-Для запуска проекта
-
-```bash
-pip install -r requirements/prod.txt
-```
-
-6. Настройка переменных окружения
+3. Настройка переменных окружения
 
 Linux/macOS
 
@@ -71,6 +35,10 @@ Windows (PowerShell)
 Copy-Item .env.example .env
 ```
 
+4. Запуск проекта
+```bash
+docker-compose up --build
+```
 
 ---
 После запуска сервер будет доступен по адресу:

@@ -5,6 +5,7 @@
 ### Предварительные требования
 
 - [Python 3.11+](https://www.python.org/downloads/)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Git](https://git-scm.com/downloads)
 
 ### Установка и запуск

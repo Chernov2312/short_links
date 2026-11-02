@@ -1,10 +1,10 @@
 # ShortLinks || PetProject
 
 ---
-
+[![linter_test](https://github.com/Chernov2312/short_links/actions/workflows/ci_linter_test.yml/badge.svg)](https://github.com/Chernov2312/short_links/actions/workflows/ci_linter_test.yml)
 ### Предварительные требования
 
-- [Python 3.11+](https://www.python.org/downloads/)
+- [Python 3.13+](https://www.python.org/downloads/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Git](https://git-scm.com/downloads)
 

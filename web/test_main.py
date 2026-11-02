@@ -20,7 +20,8 @@ def test_create_link_success(app, mocker):
     )
 
     request, response = app.test_client.post(
-        '/shorten', json={'link': 'http://google.com'},
+        '/shorten',
+        json={'link': 'http://google.com'},
     )
     assert response.status == 201
     assert response.json['status'] == 'success'
@@ -39,7 +40,8 @@ def test_create_link_invalid_url(app, mocker):
     )
 
     request, response = app.test_client.post(
-        '/shorten', json={'link': 'yandex.ru'},
+        '/shorten',
+        json={'link': 'yandex.ru'},
     )
     assert response.status != 201
 
